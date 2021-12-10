@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -78,7 +75,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="o42-h4-YUU">
-                                            <rect key="frame" x="169" y="94.5" width="37" height="37"/>
+                                            <rect key="frame" x="169" y="94" width="37" height="37"/>
                                             <color key="color" red="0.32549019610000002" green="0.68627450980000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </activityIndicatorView>
                                     </subviews>
@@ -105,4 +102,12 @@
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="YiC-pw-PH8">
+            <size key="intrinsicContentSize" width="60.5" height="36.5"/>
+        </designable>
+        <designable name="iKV-MD-vzF">
+            <size key="intrinsicContentSize" width="44.5" height="28"/>
+        </designable>
+    </designables>
 </document>
