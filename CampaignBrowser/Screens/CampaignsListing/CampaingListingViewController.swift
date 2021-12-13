@@ -19,6 +19,8 @@ class CampaignListingViewController: UIViewController {
         super.viewDidLoad()
 
         assert(typedView != nil)
+        
+        typedView.collectionViewLayout = CampaignLayout()
     }
 
     override func viewWillAppear(_ animated: Bool) {

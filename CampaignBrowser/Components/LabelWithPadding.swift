@@ -8,14 +8,17 @@ import UIKit
 class LabelWithPadding: UILabel {
 
     /** The padding (in points). Will be added to all edges. */
-    @IBInspectable var padding: CGFloat = 8
+    //@IBInspectable var topPadding: CGFloat = 0
+    @IBInspectable var leftPadding: CGFloat = 8
+    //@IBInspectable var bottomPadding: CGFloat = 0
+    @IBInspectable var rightPadding: CGFloat = 8
 
     override func drawText(in rect: CGRect) {
-        super.drawText(in: rect.inset(by: UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)))
+        super.drawText(in: rect.inset(by: UIEdgeInsets(top: 0, left: leftPadding, bottom: 0, right: rightPadding)))
     }
 
     override var intrinsicContentSize: CGSize {
         let originalSize = super.intrinsicContentSize
-        return CGSize(width: originalSize.width + padding * 2, height: originalSize.height + padding * 2)
+        return CGSize(width: originalSize.width + leftPadding + rightPadding, height: originalSize.height)
     }
 }
