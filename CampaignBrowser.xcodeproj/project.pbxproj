@@ -20,11 +20,19 @@
 		23F7B5DC1F59A70E00154DD9 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7B5D91F59A70E00154DD9 /* ServiceLocator.swift */; };
 		23F7B5DE1F59A71B00154DD9 /* CampaignData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7B5DD1F59A71B00154DD9 /* CampaignData.swift */; };
 		23F7B5E01F59A73000154DD9 /* CampaignListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F7B5DF1F59A73000154DD9 /* CampaignListingView.swift */; };
+		B8708F4C276872B100445C94 /* CampaignBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8708F4B276872B100445C94 /* CampaignBrowserTests.swift */; };
 		B8B5F1F166845F0ECFBB5E7F /* Pods_CampaignBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE6F773D7D1702E9482B13D /* Pods_CampaignBrowser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		23F7B5AB1F5958F400154DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23F7B58E1F5958F300154DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F7B5951F5958F300154DD9;
+			remoteInfo = CampaignBrowser;
+		};
+		B8708F4E276872B100445C94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 23F7B58E1F5958F300154DD9 /* Project object */;
 			proxyType = 1;
@@ -55,6 +63,9 @@
 		23F7B5E11F59A76A00154DD9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		47520166195A4003183C8D8A /* Pods-CampaignBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampaignBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampaignBrowser/Pods-CampaignBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		6EE6F773D7D1702E9482B13D /* Pods_CampaignBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampaignBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8708F49276872B100445C94 /* CampaignBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampaignBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8708F4B276872B100445C94 /* CampaignBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignBrowserTests.swift; sourceTree = "<group>"; };
+		B8708F4D276872B100445C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFF862F2521D154547AA0BBB /* Pods-CampaignBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampaignBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampaignBrowser/Pods-CampaignBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +85,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8708F46276872B100445C94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +102,7 @@
 				23F7B5C91F597B7700154DD9 /* Podfile */,
 				23F7B5981F5958F300154DD9 /* CampaignBrowser */,
 				23F7B5AD1F5958F400154DD9 /* CampaignBrowserUITests */,
+				B8708F4A276872B100445C94 /* CampaignBrowserTests */,
 				23F7B5971F5958F300154DD9 /* Products */,
 				92F3CB1E7C971469A2B28776 /* Pods */,
 				3AB6449F1A7DCBF82BA822FD /* Frameworks */,
@@ -95,6 +114,7 @@
 			children = (
 				23F7B5961F5958F300154DD9 /* CampaignBrowser.app */,
 				23F7B5AA1F5958F400154DD9 /* CampaignBrowserUITests.xctest */,
+				B8708F49276872B100445C94 /* CampaignBrowserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +213,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B8708F4A276872B100445C94 /* CampaignBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8708F4B276872B100445C94 /* CampaignBrowserTests.swift */,
+				B8708F4D276872B100445C94 /* Info.plist */,
+			);
+			path = CampaignBrowserTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,13 +262,31 @@
 			productReference = 23F7B5AA1F5958F400154DD9 /* CampaignBrowserUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B8708F48276872B100445C94 /* CampaignBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8708F50276872B100445C94 /* Build configuration list for PBXNativeTarget "CampaignBrowserTests" */;
+			buildPhases = (
+				B8708F45276872B100445C94 /* Sources */,
+				B8708F46276872B100445C94 /* Frameworks */,
+				B8708F47276872B100445C94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8708F4F276872B100445C94 /* PBXTargetDependency */,
+			);
+			name = CampaignBrowserTests;
+			productName = CampaignBrowserTests;
+			productReference = B8708F49276872B100445C94 /* CampaignBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		23F7B58E1F5958F300154DD9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Westwing GmbH";
 				TargetAttributes = {
@@ -252,6 +299,12 @@
 					23F7B5A91F5958F400154DD9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = Y2NQ6FJX24;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 23F7B5951F5958F300154DD9;
+					};
+					B8708F48276872B100445C94 = {
+						CreatedOnToolsVersion = 12.5.1;
+						DevelopmentTeam = 3KQV6HVZWR;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 23F7B5951F5958F300154DD9;
 					};
@@ -273,6 +326,7 @@
 			targets = (
 				23F7B5951F5958F300154DD9 /* CampaignBrowser */,
 				23F7B5A91F5958F400154DD9 /* CampaignBrowserUITests */,
+				B8708F48276872B100445C94 /* CampaignBrowserTests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,6 +343,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		23F7B5A81F5958F400154DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8708F47276872B100445C94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,6 +428,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8708F45276872B100445C94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8708F4C276872B100445C94 /* CampaignBrowserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -374,6 +443,11 @@
 			isa = PBXTargetDependency;
 			target = 23F7B5951F5958F300154DD9 /* CampaignBrowser */;
 			targetProxy = 23F7B5AB1F5958F400154DD9 /* PBXContainerItemProxy */;
+		};
+		B8708F4F276872B100445C94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F7B5951F5958F300154DD9 /* CampaignBrowser */;
+			targetProxy = B8708F4E276872B100445C94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -568,6 +642,51 @@
 			};
 			name = Release;
 		};
+		B8708F51276872B100445C94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KQV6HVZWR;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CampaignBrowserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cam.babatunde.CampaignBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampaignBrowser.app/CampaignBrowser";
+			};
+			name = Debug;
+		};
+		B8708F52276872B100445C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3KQV6HVZWR;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CampaignBrowserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cam.babatunde.CampaignBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampaignBrowser.app/CampaignBrowser";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,6 +713,15 @@
 			buildConfigurations = (
 				23F7B5B71F5958F400154DD9 /* Debug */,
 				23F7B5B81F5958F400154DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8708F50276872B100445C94 /* Build configuration list for PBXNativeTarget "CampaignBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8708F51276872B100445C94 /* Debug */,
+				B8708F52276872B100445C94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
